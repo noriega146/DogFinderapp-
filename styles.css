@@ -5,13 +5,35 @@ body {
   align-items: center;
   height: 100vh;
   background-color: #f0f0f0;
+  margin: 0;
 }
 #app {
   background: white;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
 }
 #results {
   margin-top: 20px;
+}
+.breed {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  cursor: pointer;
+}
+.breed:last-child {
+  border-bottom: none;
+}
+#loading {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #333;
+}
+@media (max-width: 600px) {
+  #app {
+    width: 100%;
+    padding: 10px;
+  }
 }
